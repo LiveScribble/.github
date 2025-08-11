@@ -1,7 +1,6 @@
 # 🚧 Inkline (Work In Progress) 🚧
 
 > **Note:** Inkline is currently under active development.  
-> Core features like real-time editing, cursor tracking, and access sharing are being built.
 
 ---
 
