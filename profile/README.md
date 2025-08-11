@@ -18,6 +18,7 @@ It’s built with:
 - **Live presence** — see other users' cursors, selections, and names.
 - **Share-by-access** — Grant Access to Others for collaborative editing
 - **Offline-safe** — local-first architecture; edits are merged even if the server briefly disconnects.
+- **Scalable** — horizontal scaling with Redis Pub/Sub for multi-node setups.
 
 ## 🏗 How It Works
 
@@ -29,5 +30,6 @@ LiveScribble uses a **frontend-first CRDT model**:
 4. **Server broadcasts** the diffs to all other connected clients in the same room.
 5. **Presence updates** (cursor position, selection, name, color) are sent as JSON and broadcast to others.
 6. **Snapshots** are periodically saved to PostgreSQL so the document can be restored later.
+
 
 
